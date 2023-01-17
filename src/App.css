@@ -1,0 +1,54 @@
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  flex: content;
+  flex-direction: row;
+}
+
+.left {
+  width: 50%;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+.stopWatch {
+  font-size: 40px;
+  padding: 20px;
+}
+
+.epoch {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.right {
+  width: 50%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.metrics {
+  font-size: 12px;
+}
+.app {
+
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.loading {
+  width: 100px;
+  height: 200px;
+  justify-content: center;
+  align-self: center;
+}
