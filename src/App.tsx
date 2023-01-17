@@ -15,6 +15,7 @@ class App extends React.Component {
   }
 
   metricRequest = () => {
+    
     const metricsUrl = 'http://localhost:7000/metrics'
     axios.get(metricsUrl, {headers:{'Authorization': 'mysecrettoken'}}).then((response) => {
       this.setState({
@@ -42,7 +43,7 @@ class App extends React.Component {
     this.metricRequest()
 
      setInterval(() => {
-      let timeDif = new Date().getTime() - this.state.latestTime
+      const timeDif = new Date().getTime() - this.state.latestTime
       const newDate = moment(timeDif - 3600000).format('HH:mm:ss')
       this.setState({
         time: this.state.loadingTime ? '00:00:00' : newDate,
